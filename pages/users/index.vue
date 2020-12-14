@@ -286,7 +286,6 @@ export default {
         await this.$nuxt.$loading.start()
         await this.getUsers()
         await this.getRoles()
-        await this.getEmployees()
         await this.$nuxt.$loading.finish()
       } catch (error) {
         await this.$toast.global.errorData()
@@ -298,7 +297,6 @@ export default {
     ...mapActions({
       getUsers: "user/getUsers",
       getRoles: "role/getRoles",
-      getEmployees: "employee/getEmployees",
     }),
     async handleUpdateActiveUser(user) {
       await this.$confirm(
