@@ -9,6 +9,12 @@ export const state = () => {
         exact: true,
       },
       {
+        icon: "mdi-xml",
+        name: "Processar XMLs ",
+        route: "/xml-process",
+        permission: "xml-process-index",
+      },
+      {
         icon: "mdi-account-group",
         name: "Usuários",
         route: "/users",
